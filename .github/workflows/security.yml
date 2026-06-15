@@ -26,7 +26,7 @@ jobs:
         with:
           fetch-depth: 0 # full history so pushes scan new commits too
       - name: gitleaks
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
